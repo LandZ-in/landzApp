@@ -19,10 +19,12 @@ function App() {
 
   const isDashboardRoute = location.pathname.startsWith('/admin-dashboard') || location.pathname.startsWith('/user-dashboard');
   return (
-    <>  <Routes>
+    <>  
+  
+    <Routes>
       <Route element={<Header />}>
         <Route path="/" element={<Home />} />
-        <Route path="property-listings" element={<PropertyListings />} />
+        <Route path="/property-listings" element={<PropertyListings />} />
         <Route path="/land-profile" element={<LandProfile />} />
         <Route path="/admin-dashboard/*" element={<AdminDashboard />} />
         <Route path="/user-dashboard/*" element={<UserDashboard />} />
