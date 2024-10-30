@@ -15,6 +15,7 @@ import ResetPassword from './login/ResetPassword';
 import UserDashboard from "./pages/User/pages/UserDashboard";
 import SubmitFeedback from "./components/LandProfile/SubmitFeedback";
 import Blog from "./pages/Blog";
+import ScheduleVisitPage from "./pages/ScheduleVisitPage";
 function App() {
   const location = useLocation();
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/property-listings" element={<PropertyListings />} />
         <Route path="/land-profile" element={<LandProfile />} />
+        <Route path="/schedule-visit-page" element={<ScheduleVisitPage />} />
         <Route path="/admin-dashboard/*" element={<AdminDashboard />} />
         <Route path="/user-dashboard/*" element={<UserDashboard />} />
         <Route path="/submit-feedback" element={<SubmitFeedback />} />

@@ -791,7 +791,9 @@ h2 {
     background-color: #f0fdf2;
   }
 
-
+.scheduling-calendar{
+  justify-content: center !important;
+}
 
   .submit-button {
     background-color: black;
@@ -1060,4 +1062,190 @@ h2 {
     }
 
   }
+.react-calendar{
+  border: none !important;
+  width: 400px !important;
+}
+.react-calendar__tile--active{
+  background-color: #065E14 !important;
+  color: #fff !important;
+}
+/* Center the main container */
+.calendar-time-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 2rem;
+  width: 900px;
+  margin: 45px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Style the calendar section */
+.calendar-section {
+  width: 400px;
+  padding: 1rem;
+  text-align: center;
+}
+.calendar-section h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+/* Style the time slot section */
+.time-slot-section {
+  width: 300px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.time-zone-container {
+  margin-top: 1rem;
+  text-align: left;
+}
+.time-zone-header{
+  display: flex;
+}
+.time-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.time-button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  width: 200px !important;
+}
+.next-button{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #065E14;
+color: #fff;
+  cursor: pointer;
+  width: 100px !important;
+  transition: background-color 0.2s, transform 0.2s, opacity 0.3s;
+  transform: translateX(20px); /* Start hidden (off-screen) */
+  opacity: 0;
+}
+.next-button.show {
+  transform: translateX(0); /* Slide in */
+  opacity: 1; /* Fade in */
+  
+}
+
+
+.time-button.selected {
+  background-color: #212121;
+  color: #fff;
+  width: 100px !important;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  padding-left: 10px;
+}
+
+[class*="col-"] {
+  padding: 10px;
+
+}
+
+/* Column Sizes (based on percentages) */
+.col-100 {
+  flex: 0 0 100%;
+}
+
+.col-80 {
+  flex: 0 0 80%;
+}
+
+.col-75 {
+  flex: 0 0 75%;
+}
+
+.col-70 {
+  flex: 0 0 70%;
+}
+
+.col-66 {
+  flex: 0 0 66%;
+}
+
+.col-60 {
+  flex: 0 0 60%;
+}
+
+.col-50 {
+  flex: 0 0 50%;
+}
+
+.col-40 {
+  flex: 0 0 40%;
+}
+
+.col-33 {
+  flex: 0 0 33.33%;
+}
+
+.col-25 {
+  flex: 0 0 25%;
+}
+
+.col-20 {
+  flex: 0 0 20%;
+}
+
+@media (max-width: 768px) {
+  [class*="col-"] {
+    flex: 0 0 100%;
+  }
+
 }

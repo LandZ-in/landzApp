@@ -14,13 +14,13 @@ import { GrTransaction } from "react-icons/gr";
 import { GiTreeBranch } from "react-icons/gi";
 import { PiBuildingOffice } from "react-icons/pi";
 import { MdOutlineAgriculture } from "react-icons/md";
-
+import { useNavigate,} from 'react-router-dom';
 const images = [farmland, farmland2, farmland3];
 
 const PropertyProfile = () => {
     const [isFav, setIsFav] = useState(false)
     const [selectedImage, setSelectedImage] = useState(images[0]);
-
+    const navigate = useNavigate()
     // Handle image click
     const handleImageClick = (image) => {
         setSelectedImage(image);
@@ -186,7 +186,7 @@ const PropertyProfile = () => {
                         <p className='text-sm my-2'>Owner (1 week ago)</p>
 
                         <button className='my-2 bg-[#065E14] text-white py-2 w-full rounded-lg' >Contact Owner</button>
-                        <button className='mt-2 border-[#065E14] border-2 text-[#065E14] font-semibold py-2 w-full rounded-lg'>Schedule Visit</button>
+                        <button className='mt-2 border-[#065E14] border-2 text-[#065E14] font-semibold py-2 w-full rounded-lg' onClick={() => navigate('/schedule-visit-page')}>Schedule Visit</button>
                     </div>
 
                     {/* lower demand box  */}

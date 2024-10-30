@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .form-group {
   margin-bottom: 20px;
 }
