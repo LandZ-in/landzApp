@@ -28,14 +28,14 @@ const Signup = () => {
 
                 </div>
 
-                <button type="submit" className="login-button">Sign Up</button>
+                <button type="submit" className="login-button"><Link to="/login">Sign Up </Link></button>
 
                 <div className="social-login">
                     <button className="social-btn google"> <img src="https://img.icons8.com/?size=100&id=17949&format=png&color=000000" alt="google icon" /> Signup with Google</button>
                     <button className="social-btn apple"> <img src="https://img.icons8.com/?size=100&id=30840&format=png&color=000000" alt="apple logo" /> Signup with Apple</button>
                 </div>
 
-                <p className="signup-text">Don't have an account? <Link to="/login">Login</Link></p>
+                <p className="signup-text">Already have an account? <Link to="/login">Login</Link></p>
             </form>
         </aside>
     )
