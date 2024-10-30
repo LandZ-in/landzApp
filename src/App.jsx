@@ -14,6 +14,7 @@ import OTPVerification from './login/OTPVerification';
 import ResetPassword from './login/ResetPassword';
 import UserDashboard from "./pages/User/pages/UserDashboard";
 import SubmitFeedback from "./components/LandProfile/SubmitFeedback";
+import Blog from "./pages/Blog";
 function App() {
   const location = useLocation();
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/admin-dashboard/*" element={<AdminDashboard />} />
         <Route path="/user-dashboard/*" element={<UserDashboard />} />
         <Route path="/submit-feedback" element={<SubmitFeedback />} />
+        <Route path="/blog" element={<Blog />} />
         <Route element={<Login />}>
           <Route path="/login" element={<LoginForm />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />

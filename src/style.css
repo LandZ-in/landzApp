@@ -1,7 +1,3 @@
-body{
-  font-family: Inter, sans-serif;  
-}
-
 .mainContainer {
   padding: 24px 80px;
 }
@@ -723,7 +719,8 @@ h2 {
   .feedback-form .input-group {
     margin-bottom: 1rem;
 
-    .checkbox-group, .radio-group {
+    .checkbox-group,
+    .radio-group {
       display: flex;
       gap: 32px;
     }
@@ -751,45 +748,48 @@ h2 {
 
 
   /* Base style for radio and checkbox inputs */
-input[type="radio"],
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #065e14;
-  background-color: white;
-  position: relative;
-  cursor: pointer;
-}
+  input[type="radio"],
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #065e14;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+  }
 
-/* Circular style for radio buttons */
-input[type="radio"] {
-  border-radius: 100% !important; /* Makes the radio button circular */
-}
+  /* Circular style for radio buttons */
+  input[type="radio"] {
+    border-radius: 100% !important;
+    /* Makes the radio button circular */
+  }
 
-/* Square style for checkboxes */
-input[type="checkbox"] {
-  border-radius: 4px; /* Keeps the checkbox square */
-}
+  /* Square style for checkboxes */
+  input[type="checkbox"] {
+    border-radius: 4px;
+    /* Keeps the checkbox square */
+  }
 
-/* Custom checked state for both radio buttons and checkboxes */
-input[type="radio"]:checked::after,
-input[type="checkbox"]:checked::after {
-  content: '✔'; /* Check symbol */
-  color: #065e14;
-  font-size: 12px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  /* Custom checked state for both radio buttons and checkboxes */
+  input[type="radio"]:checked::after,
+  input[type="checkbox"]:checked::after {
+    content: '✔';
+    /* Check symbol */
+    color: #065e14;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-/* Background color on checked state */
-input[type="radio"]:checked,
-input[type="checkbox"]:checked {
-  background-color: #f0fdf2;
-}
+  /* Background color on checked state */
+  input[type="radio"]:checked,
+  input[type="checkbox"]:checked {
+    background-color: #f0fdf2;
+  }
 
 
 
@@ -811,5 +811,253 @@ input[type="checkbox"]:checked {
 
   .left img {
     width: 100%;
+  }
+}
+
+
+/* Blog section CSS  */
+
+.blog-section {
+  margin-top: 32px;
+  font-size: 14px;
+
+  .top-heading-bar {
+    text-align: center;
+    max-width: 55%;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 44px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 16px;
+      color: #616161;
+    }
+
+    .heading-search-bar {
+      display: flex;
+      max-width: fit-content;
+      margin: 0 auto;
+      gap: 8px;
+      margin-top: 56px;
+
+      .filter-search-input {
+        width: 500px;
+        position: relative;
+
+        input {
+          width: 100%;
+          padding-top: 9px;
+          padding-bottom: 9px;
+          padding-left: 40px;
+          background-color: #f9fafb;
+        }
+
+        .search-icon {
+          position: absolute;
+        }
+      }
+
+      button {
+        display: flex;
+        gap: 4px;
+        background-color: #065e14;
+        color: #fff;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 18px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .card-section {
+    margin: 0 80px;
+    margin-top: 64px;
+
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .blog-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+/* BlogCard css file */
+
+.blog-component-card {
+  display: flex;
+  flex-basis: 31%;
+  margin-bottom: 32px;
+
+  .card {
+    background-color: #f9fafb;
+    display: block;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .card-content p {
+    color: #ccc;
+    margin: 0;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 12px;
+    border-top: 1px solid #e0e0e0;
+    color: #999;
+    gap: 8px;
+
+    .card-author-data span {
+      display: block;
+    }
+  }
+
+  .card-footer .author {
+    flex: 1;
+    font-weight: bold;
+    color: #212121;
+  }
+
+  .card-footer .read-time {
+    flex-shrink: 0;
+  }
+
+  .card-actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .bookmark-btn {
+    padding: 0 8px;
+  }
+
+  .bookmark-btn,
+  .share-btn {
+    background: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #999;
+    transition: color 0.3s;
+  }
+
+  .bookmark-btn:hover,
+  .share-btn:hover {
+    color: #333;
+  }
+}
+
+
+/* SUbscribe Newsletter Blog Css  */
+
+.subscribe-newsletter {
+  background-color: #f9fafb;
+
+  .newsletter-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 0;
+    text-align: center;
+
+    .newsletter-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .newsletter-tagline {
+      color: #065E14;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .newsletter-heading {
+      font-size: 44px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .newsletter-description {
+      font-size: 14px;
+      font-weight: 600;
+      color: #475467;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .newsletter-form {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .newsletter-input {
+      width: 100%;
+      padding: 12px 15px;
+      font-size: 14px;
+      outline: none;
+      border-width: 2px;
+      transition: border-color 0.3s ease;
+    }
+
+    .newsletter-input:focus {
+      border-color: #065E14;
+    }
+
+    .newsletter-button {
+      background-color: #065E14;
+      margin-top: 16px;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      min-width: 188px;
+      min-height: 36px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .newsletter-button:hover {
+      background-color: #005000;
+    }
+
   }
 }

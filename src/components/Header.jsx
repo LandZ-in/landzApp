@@ -24,7 +24,7 @@ export default function Header() {
                 <option value="property-listings" >Property Listings</option>
               </select>
               <span className="menus" onClick={() => navigate('/property-listings')}>Post Property</span>
-              <span className="menus">Blog</span>
+              <span className="menus" onClick={() => navigate('/blog')}>Blog</span>
               <span className="menus">About</span>
               <span className="menus">Contact</span>
             </nav>
